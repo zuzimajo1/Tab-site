@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+  /* font-family: "Ramabhadra", sans-serif; */
+}
+.author{
+  margin-top: 50px;
+  font-size: 15px;
+  font-weight: 100;
+}
+
+body {
+  width: 100%;
+  background-color: rgb(237, 242, 245);
+  display: flex;
+  justify-content: center;
+}
+
+.maintitle {
+  width: 100%;
+  margin-top: 3.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.maintitle h2 {
+  font-size: 39px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  color: rgb(41, 39, 39);
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.underline {
+  margin-top: 2px;
+  height: 4px;
+  width: 6%;
+  background-color: #509ebd;
+}
+
+.container {
+  display: flex;
+  margin-top: 4rem;
+  width: 100vw;
+}
+
+.buttoncontainer {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: 300px;
+  align-items: center;
+}
+
+.buttonclass:hover {
+  border-left: 2px solid #509ebd;
+  color: #509ebd;
+}
+
+.buttonclass {
+  font-size: 22px;
+  width: 50%;
+  height: 11%;
+  border: 1px solid red;
+  border: none;
+  background: none;
+  border-left: 2px solid rgb(237, 242, 245);
+  cursor: pointer;
+}
+
+.buttonfocused {
+  border-left: 2px solid #509ebd;
+  color: #509ebd;
+}
+
+.buttonclass:nth-child(2) {
+  margin: 16px 0px;
+}
+
+.title {
+  font-size: 27px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 100;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  color: rgb(75, 71, 71);
+}
+
+.company {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 2px 8px;
+  text-align: center;
+  background-color: rgb(193, 213, 216);
+  color: rgb(89, 92, 92);
+  letter-spacing: 1px;
+  border-radius: 4px;
+}
+
+.dates {
+  font-size: 16px;
+  font-family: "Noto Sans", sans-serif;
+  letter-spacing: 1px;
+  margin-top: 13px;
+  color: gray;
+}
+
+.contentcontainer {
+  height: 400px;
+  width: 65%;
+}
+
+.dutiescontainer {
+  margin-top: 12px;
+}
+
+.dutieswrapper {
+  display: flex;
+}
+
+.dutieswrapper:nth-child(2) {
+  margin-top: 23px;
+}
+
+.dutieswrapper:nth-child(3) {
+  margin-top: 23px;
+}
+
+.dutieswrapper:nth-child(4) {
+  margin-top: 23px;
+}
+.icondiv {
+  padding: 0 8px 0 0;
+  display: flex;
+  align-items: center;
+}
+.icondiv .icon {
+  color: #509ebd;
+}
+
+.itemsdiv {
+  margin-left: 19px;
+}
+
+.itemsdiv p {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 15px;
+  color: rgb(78, 75, 75);
+}
+
+@media (max-width: 768px) {
+  .maintitle h2 {
+    font-size: 32px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .buttoncontainer {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  .buttonclass {
+    width: auto;
+    margin: 0 14px;
+    font-size: 21px;
+    border-left: none;
+  }
+
+  .buttonclass:hover {
+    border-bottom: 2px solid #509ebd;
+    color: #509ebd;
+    border-left: none;
+  }
+
+  .buttonfocused {
+    border-left: none;
+    border-bottom: 2px solid #509ebd;
+    color: #509ebd;
+  }
+
+  .contentcontainer {
+    width: 100%;
+    padding: 0 5rem;
+    margin-top: 2rem;
+  }
+  .title {
+    font-size: 20px;
+    font-weight: 100;
+  }
+
+  .company {
+    font-size: 14px;
+  }
+
+  .dates {
+    font-size: 14px;
+  }
+
+  .itemsdiv p {
+    font-size: 13px;
+  }
+
+  @media (max-width: 640px) {
+    .contentcontainer {
+      width: 100%;
+      padding: 0 3rem;
+      margin-top: 2rem;
+    }
+  }
+  @media (max-width: 360px) {
+    .maintitle h2 {
+      font-size: 26px;
+    }
+
+    .buttonclass {
+      font-size: 18px;
+    }
+    .contentcontainer {
+      padding: 0 1.5rem;
+      height: 450px;
+    }
+    .container{
+      padding-bottom: 2rem;
+    }
+  }
+}
